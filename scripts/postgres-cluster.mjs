@@ -26,7 +26,7 @@ export function readDatabaseConfig() {
   const database = decodeURIComponent(url.pathname.replace(/^\//, ''))
 
   if (!database) {
-    throw new Error('DATABASE_URL must include a database name, for example postgres://user:pass@127.0.0.1:5432/y')
+    throw new Error('DATABASE_URL must include a database name, for example postgres://user:pass@127.0.0.1:5432/payloadcms-test')
   }
 
   return {
